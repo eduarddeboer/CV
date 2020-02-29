@@ -39,21 +39,17 @@
 |2012 - heden|ReputatieCoach|
 |2015 - 2016|Remote LocalSpark Project Manager @Whitespark Inc, Edmonton (Canada)|
 
-|ICT Ervaring||
-|---|---|
-|Besturingssystemen| * MacOS X
-* MS Windows
-* Linux / FreeBSD / OpenBSD etc.|
-|Office suites| * MS-Office
-* OpenOffice
-* Zoho Office 
-|
-|CRM|
-* SuiteCRM
-* SugarCRM
-* ZohoCRM
-|
-
+# ICT Ervaring
+* Besturingssystemen: MacOS X, MS Windows, Linux, FreeBSD, OpenBSD etc.
+* Office suites: MS-Office, OpenOffice, Zoho Office
+* CRM: SuiteCRM, SugarCRM, ZohoCRM
+* ... en vele specialistische omgevingen
 
 # Motivatie
+Een mens komt verschillende keren in zijn of haar leven op een punt, dat er de mogelijkheid bestaat het roer om te gooien. Gedurende mijn leven heb ik een paar keer dit soort momenten mogen beleven. Zo ging ik van de ICT over op het werken in Kenia, terug in de ICT, fotografie en andere leuke werkgebieden.
+
+Ik heb het gevoel dat ik nu weer op zo'n punt ben beland. Na het grootste deel van mijn leven als zelfstandige te hebben geopereerd, wil ik het komende deel van mijn werkzame leven toch weer terug naar de natuur, evenals in 1999 tot 2004, toen ik vrijwilliger was in de bush. Ik hoef niet per se de natuur in, maar ben wel gefascineerd door hout en alles daar omheen. Dat is de afgelopen jaren aangewakkerd door (toen nog redelijk oppervlakkige) gesprekken met Evan hierover en helemaal tijdens onze trip naar Congo, waar ik hem de oren van het hoofd heb gevraagd over hout.
+
+Op zich voldoe ik volgens mij aan alle eisen, behalve het "hout-deel". Toch ben ik ervan overtuigd dat ik mij het noodzakelijke (en op dit moment "missende") deel om zelfstandig aan het werk te kunnen gaan naar opdrachtgevers, binnen afzienbare tijd eigen kan maken. Ik zal dit ook met plezier in mijn eigen tijd doen.
+
 
