@@ -41,12 +41,10 @@
 
 |ICT Ervaring||
 |---|---|
-|Besturingssystemen|
-* MacOS X
+|Besturingssystemen| * MacOS X
 * MS Windows
 * Linux / FreeBSD / OpenBSD etc.|
-|Office suites|
-* MS-Office
+|Office suites| * MS-Office
 * OpenOffice
 * Zoho Office 
 |
