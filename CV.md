@@ -1,4 +1,4 @@
-# Cirriculum Vitae van Eduard de Boer
+# Curriculum Vitae van Eduard de Boer
 
 |Persoonlijke gegegevens   |   |
 |---|---|
@@ -19,7 +19,7 @@
 |Duits|Vloeiend|
 |Frans|Vloeiend|
 
-|Werkervaring|(Highlights) |
+|Periode|Functie / Rol |
 |---|---|
 |1992 - 1993|Programmeur @TeleSystems Marketing, Fairfax, VA (USA)|
 |1993 - 1997|Diverse software-ontwikkeling / detacharing|
