@@ -106,7 +106,7 @@ Scraper.prototype.execPass1 = function() {
   this.settings.saveSearch();
   
   deleteTriggers();
-  setTrigger( "searchLocations", 35 );
+  setTrigger( "searchLocations", 32 );
   
   //* Loop over keywords
   while ( keyword != "" ) {
