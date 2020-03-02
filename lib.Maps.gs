@@ -41,9 +41,13 @@ function GoogleMapsExecPass2( s, r ) {
       } else {
         r.setFieldValue( 'vt', '360', s.db.fieldindex ); // Business has Street View?
       }
-    }  
-    else { 
+    } else { 
       r.setFieldValue( 'vt', 'No', s.db.fieldindex );  // Business has no Street View
+    }    
+    
+    r.setFieldValue( 'hashours', 'Yes', s.db.fieldindex );
+    if ( html.indexOf( '/rap/edit/hours' ) > -1 ) {
+      r.setFieldValue( 'hashours', 'No', s.db.fieldindex ); 
     }
     
     //* Check the reviews
@@ -56,7 +60,14 @@ function GoogleMapsExecPass2( s, r ) {
     var website = [];
     var regExp_website = /\/url\?q\\\\u003d(.*?)\\\\u0026sa/;
     try { website = regExp_website.exec(html); } catch (err) { Logger.log( err ); }
-    if ( website != null && website[1].indexOf( 'google' ) == -1 && website[1].indexOf( 'http' ) > -1 ) { r.setFieldValue( 'website', website[1], s.db.fieldindex ); }  
+    if ( website != null && website[1].indexOf( 'google.com' ) == -1 && website[1].indexOf( 'http' ) > -1 ) {
+      r.setFieldValue( 'website', website[1], s.db.fieldindex );
+      r.setFieldValue( 'hassite', 'Yes', s.db.fieldindex );
+    } else {
+      r.setFieldValue( 'hassite', 'No', s.db.fieldindex );
+    }
+    
+    
   }
 
   //* Update the record

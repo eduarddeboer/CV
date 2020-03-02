@@ -106,7 +106,7 @@ Scraper.prototype.execPass1 = function() {
   this.settings.saveSearch();
   
   deleteTriggers();
-  setTrigger( "searchLocations", 8 );
+  setTrigger( "searchLocations", 35 );
   
   //* Loop over keywords
   while ( keyword != "" ) {
@@ -279,7 +279,7 @@ Scraper.prototype.execPass2 = function() {
     return;
   }
   
-  setTrigger( "enrichLocations", 5 );
+  setTrigger( "enrichLocations", 35 );
   setTrigger( "enrichLocations", 1440 );
   
   var lineschecked = 0;
