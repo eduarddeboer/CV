@@ -25,10 +25,12 @@ function GoogleExecPass2( s, r ) {
   var city     = r.fieldvalue[ s.db.fieldindex[ 'city' ] ];
   var zipcode  = r.fieldvalue[ s.db.fieldindex[ 'zipcode' ] ];
   var country  = r.fieldvalue[ s.db.fieldindex[ 'country' ] ];
+  var phone    = r.fieldvalue[ s.db.fieldindex[ 'phone' ] ];
   
   var url = r.fieldvalue[ s.db.fieldindex[ 'name' ] ];  
   if ( zipcode != '' ) { url = url + '+' + zipcode; }
   if ( city != '' ) { url = url + '+' + city; }
+  //if ( phone != '' ) { url = url + '+' + phone; }
   if ( country != '' ) { url = url + '+' + country; }
   
   url = url + '&hl=en';

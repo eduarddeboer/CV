@@ -50,6 +50,11 @@ function GoogleMapsExecPass2( s, r ) {
       r.setFieldValue( 'hashours', 'No', s.db.fieldindex ); 
     }
     
+    r.setFieldValue( 'hascategory', 'Yes', s.db.fieldindex );
+    if ( html.indexOf( '/rap/edit/category' ) > -1 ) {
+      r.setFieldValue( 'hascategory', 'No', s.db.fieldindex ); 
+    }
+    
     //* Check the reviews
     var reviews = 0;
     var regExp_reviews = /\\"([0-9]+) reviews\\"/;
