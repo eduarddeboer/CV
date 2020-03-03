@@ -42,7 +42,7 @@ function GoogleExecPass2( s, r ) {
  
   var html = getHTMLPage( url );
   
-  if ( html.indexOf( html == null || 'wikipedia' ) > -1 || html.indexOf( '/rap/edit' ) == -1 ) {
+  if ( html == null || html.indexOf( 'wikipedia' ) > -1 || html.indexOf( '/rap/edit' ) == -1 ) {
     r.setFieldValue( 'placeid', 'N/A', s.db.fieldindex );
     r.setFieldValue( 'mapsurl', 'N/A', s.db.fieldindex );
     s.db.updateRecord( r.index );
