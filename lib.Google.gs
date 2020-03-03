@@ -69,7 +69,11 @@ function GoogleExecPass2( s, r ) {
   if ( cid != null && cid[1] != null ) {
     var newcid = h2d(cid[1]);
     r.setFieldValue( 'placeid', newcid, s.db.fieldindex );
-    if ( phone != null ) { r.setFieldValue( 'phone', phone[1], s.db.fieldindex ); }
+    
+    if ( phone != null ) {
+      r.setFieldValue( 'phone', phone[1], s.db.fieldindex );
+    }
+    
     r.setFieldValue( 'mapsurl', 'https://www.google.com/maps?cid=' + newcid, s.db.fieldindex );
   }
   
