@@ -24,10 +24,13 @@ function Settings( sheet ) {
   this.geomods    = [];
   this.stars      = [];
   this.types      = [];
+  this.lists      = {};
+  this.listdb     = {};
   
   this.getSearch();
   this.getVariables();
   this.getStatus();
+  this.getLists();
   this.getKeywords();
   this.getGeomods();
   this.getStars();
@@ -115,17 +118,51 @@ Settings.prototype.getStatus = function() {
   return( true );
 }
 
+//**************************************************************************************
+// Method: getLists(  )
+//
+// --> Reads the lists
+//**************************************************************************************
+Settings.prototype.getLists = function() {
+  
+  //* Read the Dutch keyword lists
+  this.listdb['nl']   = new DB( this.variables['keywords_ssid'], 'NL' );
+  this.listdb['nl'].getFields();
+  
+  for (var i = 0; i < this.listdb['nl'].nrfields; i++ ) {
+    
+    var listname = this.listdb['nl'].fields[ i ].toLowerCase();
+    
+    if ( listname != '' ) {
+      //#Logger.log( "Creating list : " + listname );
+               
+      this.lists[ listname ] = new Array();
+    
+      var range  = this.listdb['nl'].sheet.getRange( 2, i+1, 500, 1 );
+      var values = range.getValues();
+    
+      this.copyToArray( this.lists[ listname ], values );
+    
+      //#Logger.log( "List = " + this.lists[ listname ] );
+    }
+  }
+  
+  //#this.kws['en']  = new DB( this.settings.variables['destination_ssid'], 'EN' );
+}
+
 
 //**************************************************************************************
 // Method: getKeywords(  )
 //
-// --> Reads the different keywords (only if search['keyword'] == '*'
+// --> Reads the different keywords (only if search['keyword'] == '*')
 //**************************************************************************************
 Settings.prototype.getKeywords = function() {
-  var range  = this.sheet.getRange( 3, 7, 500, 1 );
+  var range  = this.sheet.getRange( 3, 7, 35, 1 );
   var values = range.getValues();
   
   this.copyToArray( this.keywords, values );
+  
+  Logger.log( "Keywords = " + this.keywords );
   
   return( true );
 }
@@ -138,7 +175,7 @@ Settings.prototype.getKeywords = function() {
 // --> Reads the different geomods (only if search['geomod'] == '*'
 //**************************************************************************************
 Settings.prototype.getGeomods = function() {
-  var range  = this.sheet.getRange( 3, 8, 500, 1 );
+  var range  = this.sheet.getRange( 3, 8, 35, 1 );
   var values = range.getValues();
   
   this.copyToArray( this.geomods, values );
@@ -198,15 +235,25 @@ Settings.prototype.convertToArray = function( arr, values ) {
 //**************************************************************************************
 // Method: copyToArray(  )
 //
-// --> Converts the 2-dimensional value array to an array of KVPs
+// --> Converts the 2-dimensional value array to an 1-dimensional array
 //**************************************************************************************
 Settings.prototype.copyToArray = function( arr, values ) {
-  
+  var regexp_list = /(.*?):(.*?):(.*)/;
+  var line;
+  var newarr;
   var j = 0;
   
   for ( var i = 0; i < values.length; i++ ) {
-    if ( values[ i ] != '' ) {
-      arr[ j++ ] = values[ i ][0];
+    if ( values[ i ][0] != '' ) {      
+      if ( (line = regexp_list.exec( values[ i ][0] ) ) != null ) {
+        var keyword = line[ 3 ].toLowerCase();
+        
+        for ( var k = 0; k < this.lists[ keyword ].length; k++ ) {
+          arr[ j++ ] = this.lists[ keyword ][ k ];
+        }
+      } else {
+        arr[ j++ ] = values[ i ][0].toLowerCase();
+      }
     }
   }
   

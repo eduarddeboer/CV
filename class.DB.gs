@@ -40,7 +40,7 @@ function DB( id, sheetname ) {
   this.fieldindex  = {};  
   this.records     = {};
   this.nrrecords   = 0;
-  this.nrfields    = 0;
+  this.nrfields    = this.ss.getLastColumn();
   
 }
 
@@ -128,7 +128,9 @@ DB.prototype.getFields = function() {
   
   //* Then set field indexes correct
   for ( var i = 0; i < this.fields.length; i++ ) {
-    this.fieldindex[ this.fields[i].toLowerCase() ] = i; 
+    if ( this.fields[i] != '' ) {
+      this.fieldindex[ this.fields[i].toLowerCase() ] = i; 
+    }
   }
   
   this.nrfields = i;

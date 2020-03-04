@@ -8,10 +8,10 @@
 //   - ssName  : Name of this spreadsheet
 //**************************************************************************************
 function Scraper( name, db_cnf_id ) {
-  this.name         = name;
-  
-  this.nrpages   = 0;
-  this.nrrecords = 0;
+  this.name       = name; 
+  this.nrpages    = 0;
+  this.nrrecords  = 0;
+  this.pagination = false;
   
   //* Get the settings, open the (potential remote) DB and create the Sitescraper
   this.db_cnf      = new DB( db_cnf_id, 'Settings' );
@@ -34,7 +34,7 @@ function Scraper( name, db_cnf_id ) {
         case "Data":
           break;
         default:
-        this.db.ss.deleteSheet(this.db.ss.getSheets()[i]);
+          this.db.ss.deleteSheet(this.db.ss.getSheets()[i]);
       }
     }
     
@@ -43,10 +43,9 @@ function Scraper( name, db_cnf_id ) {
     
     clearData();
   }
-  this.db          = new DB( this.settings.variables['destination_ssid'], 'Data' );
-  this.db.nrfields = this.db.ss.getLastColumn();
   
   //* Read all the fields and records
+  this.db          = new DB( this.settings.variables['destination_ssid'], 'Data' );
   this.db.getFields();  
   this.db.getRecords();
   
