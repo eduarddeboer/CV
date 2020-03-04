@@ -24,6 +24,7 @@ function Sitescraper() {
   this.nextPageURL   = this.fn_nextPageURL;
   this.fn_execpass1  = this.exec;  
   this.fn_execpass2  = this.exec;
+  this.pagination    = false;
 }
 
 
@@ -91,5 +92,10 @@ Sitescraper.prototype.setExec1 = function ( exec ) {
 
 Sitescraper.prototype.setExec2 = function ( exec ) {
   this.fn_execpass2 = exec;
+  return( true );
+}
+
+Sitescraper.prototype.enablePagination = function() {
+  this.pagination = true;
   return( true );
 }

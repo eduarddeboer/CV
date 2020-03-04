@@ -11,7 +11,6 @@ function Scraper( name, db_cnf_id ) {
   this.name       = name; 
   this.nrpages    = 0;
   this.nrrecords  = 0;
-  this.pagination = false;
   
   //* Get the settings, open the (potential remote) DB and create the Sitescraper
   this.db_cnf      = new DB( db_cnf_id, 'Settings' );
@@ -134,20 +133,44 @@ Scraper.prototype.execPass1 = function() {
   
       var html = getHTMLPage( url );    
       var results = [];
+      var curpage = 2;
   
       this.scrape.fn_execpass1( this, url );
+      var oldpage = 1;
         
       // As long as there are more pages, grab them
-      while ( results = this.scrape.nextPageRegEx.exec(html) ) {
-    
-        url = this.scrape.baseURL + results[1];
+      while ( (results = this.scrape.nextPageRegEx.exec(html)) != null ) {
         
-        Logger.log("  Fetching URL: " + url );
-        html = getHTMLPage( url );
-        this.nrpages++;
-    
-        this.scrape.nextPageRegEx.lastIndex = 0;
-        this.scrape.fn_execpass1( this, url );
+        //#Logger.log( "Results = " + JSON.stringify(results) );
+        
+        //* If using pagination, skip lower numbered pages.
+        if ( this.scrape.pagination && results[ 2 ] > oldpage ) {
+          curpage = results[ 2 ];
+          //#Logger.log("  results[1] = " + results[ 1 ] );
+          //#Logger.log("  results[2] = " + curpage );
+          //#Logger.log(" Old page = " + oldpage );
+        }
+        
+        //* Even if no pagination is being used, the following condition is always true,
+        //* so it will execute every time.
+        if ( curpage > oldpage ) {
+          url = this.scrape.baseURL + results[1].replace('&amp;', '&');
+        
+          //#Logger.log("  results[1] = " + results[ 1 ] );
+          Logger.log("  Fetching URL: " + url );
+          html = getHTMLPage( url );
+          this.nrpages++;
+             
+          this.scrape.fn_execpass1( this, url );
+          
+          //* If we use pagination, update oldpage, to make sure we scrape the next (new) page
+          if ( this.scrape.pagination ) {
+            oldpage++;
+          }
+          
+          this.scrape.nextPageRegEx.lastIndex = 0;
+        }
+        
       } //* End while results
       
       geomod = this.settings.getNextGeomod( geomod );

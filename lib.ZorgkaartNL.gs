@@ -9,11 +9,12 @@
 function initZorgkaartNL( s ) {
   s.setName( 'Zorgkaart.nl' );
   s.setBaseURL( 'https://www.zorgkaartnederland.nl' );
-  s.setnextPageRegEx( /<a href="(.*)" title="Pagina \d+">/ );
+  s.setnextPageRegEx( /<a href="(.*)" title="Pagina (\d+)">/g );
   s.setStartURL( ZorgkaartNLComposeURL );
   s.setCheckCol( 'googleurl' );
   s.setExec1( ZorgkaartNLExecPass1 );
   s.setExec2( ZorgkaartNLExecPass2 );
+  s.enablePagination();
   return( true );
 }
 
