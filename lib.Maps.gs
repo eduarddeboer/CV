@@ -29,7 +29,7 @@ function GoogleMapsExecPass2( s, r ) {
     var html = getHTMLPage( url );
 
     //* Check whether business has been claimed
-    if ( html.indexOf( 'Claim this business' ) === -1 ) {
+    if ( html != null && html.indexOf( 'Claim this business' ) === -1 ) {
       r.setFieldValue( 'claimed', 'Yes', s.db.fieldindex ); // Business has been claimed
     }  
     else { 
@@ -37,7 +37,7 @@ function GoogleMapsExecPass2( s, r ) {
     }
       
     //* Check for Street View / 360 photography
-    if ( html.indexOf( 'photos:street_view_publish_api' ) > -1 || html.indexOf( '360° view' ) > -1  )  {
+    if ( html != null && (html.indexOf( 'photos:street_view_publish_api' ) > -1 || html.indexOf( '360° view' ) > -1)  )  {
       if ( html.indexOf( 'photos:street_view_publish_api' ) > -1  )  {
         r.setFieldValue( 'vt', 'Yes', s.db.fieldindex );
       } else {
@@ -49,19 +49,19 @@ function GoogleMapsExecPass2( s, r ) {
     
     //* Check for opening hours in GMB
     r.setFieldValue( 'hashours', 'Yes', s.db.fieldindex );
-    if ( html.indexOf( '/rap/edit/hours' ) > -1 ) {
+    if ( html != null && html.indexOf( '/rap/edit/hours' ) > -1 ) {
       r.setFieldValue( 'hashours', 'No', s.db.fieldindex ); 
     }
     
     //* Check for category in GMB
     r.setFieldValue( 'hascategory', 'Yes', s.db.fieldindex );
-    if ( html.indexOf( '/rap/edit/category' ) > -1 ) {
+    if ( html != null && html.indexOf( '/rap/edit/category' ) > -1 ) {
       r.setFieldValue( 'hascategory', 'No', s.db.fieldindex ); 
     }
     
     //* Check for phone number in GMB
     r.setFieldValue( 'hasphone', 'Yes', s.db.fieldindex );
-    if ( html.indexOf( '/rap/edit/phonenumber' ) > -1 ) {
+    if ( html != null && html.indexOf( '/rap/edit/phonenumber' ) > -1 ) {
       r.setFieldValue( 'hasphone', 'No', s.db.fieldindex ); 
     }
     
