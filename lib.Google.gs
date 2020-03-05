@@ -56,12 +56,12 @@ function GoogleExecPass2( s, r ) {
   
   try {
     var cid = regExp_cid.exec( html );
-    Logger.log( "CID = " + cid[1] );
+    //#Logger.log( "CID = " + cid[1] );
   } catch (err) { Logger.log( err ); }
   
   try {
     var phone = regExp_phone.exec( html );
-    Logger.log( "phone = " + phone[1] );
+    //#Logger.log( "phone = " + phone[1] );
   } catch (err) { Logger.log( err ); }
      
   //* Update the record
@@ -76,6 +76,61 @@ function GoogleExecPass2( s, r ) {
     
     r.setFieldValue( 'mapsurl', 'https://www.google.com/maps?cid=' + newcid, s.db.fieldindex );
   }
+  
+  //* 20200305 Newly added to see whether this works, too ... Can save one pass :-)
+  //* Check whether business has been claimed
+    if ( html != null && html.indexOf( 'Claim this business' ) === -1 ) {
+      r.setFieldValue( 'claimed', 'Yes', s.db.fieldindex ); // Business has been claimed
+    }  
+    else { 
+      r.setFieldValue( 'claimed', 'No', s.db.fieldindex ); // Business has not been claimed
+    }
+      
+    //* Check for Street View / 360 photography
+    if ( html != null && (html.indexOf( 'photos:street_view_publish_api' ) > -1 || html.indexOf( '360° view' ) > -1)  )  {
+      if ( html.indexOf( 'photos:street_view_publish_api' ) > -1  )  {
+        r.setFieldValue( 'vt', 'Yes', s.db.fieldindex );
+      } else {
+        r.setFieldValue( 'vt', '360', s.db.fieldindex ); // Business has Street View?
+      }
+    } else { 
+      r.setFieldValue( 'vt', 'No', s.db.fieldindex );  // Business has no Street View
+    }    
+    
+    //* Check for opening hours in GMB
+    r.setFieldValue( 'hashours', 'Yes', s.db.fieldindex );
+    if ( html != null && html.indexOf( '/rap/edit/hours' ) > -1 ) {
+      r.setFieldValue( 'hashours', 'No', s.db.fieldindex ); 
+    }
+    
+    //* Check for category in GMB
+    r.setFieldValue( 'hascategory', 'Yes', s.db.fieldindex );
+    if ( html != null && html.indexOf( '/rap/edit/category' ) > -1 ) {
+      r.setFieldValue( 'hascategory', 'No', s.db.fieldindex ); 
+    }
+    
+    //* Check for phone number in GMB
+    r.setFieldValue( 'hasphone', 'Yes', s.db.fieldindex );
+    if ( html != null && html.indexOf( '/rap/edit/phonenumber' ) > -1 ) {
+      r.setFieldValue( 'hasphone', 'No', s.db.fieldindex ); 
+    }
+    
+    //* Check the reviews
+    var reviews = 0;
+    var regExp_reviews = /\\"([0-9]+) reviews\\"/;
+    try { reviews = regExp_reviews.exec(html); } catch (err) { Logger.log( err ); }
+    if ( reviews != null ) { r.setFieldValue( 'reviews', reviews[1], s.db.fieldindex ); }
+    
+    //* Check Website
+    var website = [];
+    var regExp_website = /\/url\?q\\\\u003d(.*?)\\\\u0026sa/;
+    try { website = regExp_website.exec(html); } catch (err) { Logger.log( err ); }
+    if ( website != null && website[1].indexOf( 'google.com' ) == -1 && website[1].indexOf( 'http' ) > -1 ) {
+      r.setFieldValue( 'website', website[1], s.db.fieldindex );
+      r.setFieldValue( 'hassite', 'Yes', s.db.fieldindex );
+    } else {
+      r.setFieldValue( 'hassite', 'No', s.db.fieldindex );
+    }
   
   //* Update the record
   s.db.updateRecord( r.index );
