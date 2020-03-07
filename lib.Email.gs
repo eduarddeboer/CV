@@ -18,7 +18,7 @@ function EmailExecPass2( s, r ) {
   var regExp_email  = /([a-zA-Z0-9._\-\+]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/;
   var regExp_email2 = /mailto:(.*?)"/;
   //var regExp_domain = /^(?:\/\/|[^\/]+)*/;
-  var regExp_domain = /(http[s]?:\/\/)(.*?)\/?$/g;
+  var regExp_domain = /^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/g;
   var regExp_href   = /<a\s+(?:[^>]*?\s+)?href="([^"]*)"/g;
   var email  = [];
   var html   = '';
@@ -35,19 +35,19 @@ function EmailExecPass2( s, r ) {
   var curmail  = r.fieldvalue[ s.db.fieldindex[ 'email' ] ]
  
   if ( website == '' ) {
+    r.setFieldValue( 'hasmail', 'N/A', s.db.fieldindex );
+    s.db.updateRecord( r.index );
     return;
   }
   
   try {
     var thisurl = regExp_domain.exec(website);
-    prefix = thisurl[ 1 ];
-    domain = thisurl[ 2 ];
+    prefix = thisurl[ 0 ];
+    domain = thisurl[ 1 ];
+    Logger.log(" Prefix = " + prefix + " | Domain = " + domain );
   } catch ( err ) {
     Logger.log( err );
   } 
-  
-  //#Logger.log( "Webiste = " + website );
-  //#Logger.log( 'Domain = ' + domain);
   
   // 1. Get http from website and add URL of website
   html = getHTMLPage( website ); 
@@ -56,7 +56,7 @@ function EmailExecPass2( s, r ) {
   // 2. Get all URLs on homepage
   if ( html != '' ) {
     try {
-      //Logger.log( 'Checking homepage for URLs: ' + website );
+      Logger.log( 'Checking homepage for URLs: ' + website );
       var url;
       var href = regExp_href.exec(html);
     
@@ -65,12 +65,12 @@ function EmailExecPass2( s, r ) {
       while (( url = regExp_href.exec( html ) ) != null ) {
         if ( urls.indexOf( url[1]) == -1 && (url[1][0] == '/' || url[1].indexOf( domain ) > -1 || url[1].indexOf( '..' ) > -1) &&
              url[1].indexOf( '.jpg') == -1 &&
-             url[1].indexOf( '.pdf') == -1
-        //if ( urls.indexOf( url[1]) == -1 
+             url[1].indexOf( '.pdf') == -1 &&
+             url[1].indexOf( 'mailto:' ) == -1
            ) {
              
              if ( url[1].indexOf( domain ) == -1 ) {
-               url[1] = prefix + domain + '/' + url[1];
+               url[1] = prefix  + '/' + url[1];
              }
              
              //Logger.log("   >> Adding " + url[1] );
@@ -129,8 +129,16 @@ function EmailExecPass2( s, r ) {
     //html = getHTMLPage( urls[ i ] ); 
   }
   
-  if ( found == 0 ) {
+  if ( found == 0 && domain == '' ) {
     email.push('N/A'); 
+    r.setFieldValue( 'hasmail', 'N/A', s.db.fieldindex );
+  } else if ( found == 0 && domain != '' ) {
+    email.push( 'info@' + domain );
+    r.setFieldValue( 'hasmail', 'No', s.db.fieldindex );
+  }
+  
+  if ( found > 0 ) {
+    r.setFieldValue( 'hasmail', 'Yes', s.db.fieldindex );
   }
   
   r.setFieldValue( 'email', email, s.db.fieldindex );
@@ -138,7 +146,7 @@ function EmailExecPass2( s, r ) {
   //* Update the record
   s.db.updateRecord( r.index );
   
-  //#Logger.log( 'Email = >' + email + '<' );
+  Logger.log( 'Email = >' + email + '<' );
 }
 
 

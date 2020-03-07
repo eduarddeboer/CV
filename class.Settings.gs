@@ -162,7 +162,7 @@ Settings.prototype.getKeywords = function() {
   
   this.copyToArray( this.keywords, values );
   
-  Logger.log( "Keywords = " + this.keywords );
+  //#Logger.log( "Keywords = " + this.keywords );
   
   return( true );
 }
