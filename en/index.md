@@ -38,10 +38,11 @@ Phone: [+31 6 - 4567 21 36](tel:+31645672136) | [+1 (646) 504-0722](tel:+1646504
 **ReputationCoach - Apeldoorn (Netherlands)**
 *2012 &ndash; present*
 - Helping business improve their online findability, visibility and online reputation
-- Produced a podcast on iTunes from 2012 until 2016
+- Produced a podcast on Stitcher iTunes from 2012 until 2016
 - Conducted trainings about reputation for universities in The Netherlands
 - Guest Speaker about online reputation at various occasions
 - More info: https:/www.reputatiecoaching.nl
+- Podcast at: https://www.stitcher.com/podcast/reputatie-coaching-podcast/reputatiecoaching
  
 **Google My Business Provider - Worldwide**
 *2019 &ndash; present*
