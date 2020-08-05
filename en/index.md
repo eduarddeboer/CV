@@ -6,17 +6,9 @@
 <li>Worldwide working experience and international client base</li>
 <li>Google Street View Trusted Photographer</li>
 <li>Google My Business Provider</li>
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    
-        <span>&nbsp;&nbsp;</span>
 </ul>
 </td><td valign="top">
-<img src="https://avatars1.githubusercontent.com/u/60309255?s=200&v=4" style="float: right;" />
+<img src="https://avatars1.githubusercontent.com/u/60309255?s=300&v=4" style="float: right;" />
 </td></tr></table>
 
 ## Contact details
