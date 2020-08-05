@@ -1,10 +1,12 @@
 # Eduard de Boer &ndash; ReputationCoach &amp; Internet Marketeer
 <table border="0" cellwidth="0" cellpadding="0">
 <tr><td>
-- 9 years experience in local and organic SEO
-- Worldwide working experience and international client base
-- Google Street View Trusted Photographer
-- Google My Business Provider
+<ul>
+<li>9 years experience in local and organic SEO</li>
+<li>Worldwide working experience and international client base</li>
+<li>Google Street View Trusted Photographer</li>
+<li>Google My Business Provider</li>
+</ul>
 </td><td style="align: right;">
 <img src="https://avatars1.githubusercontent.com/u/60309255?s=200&v=4" style="float: right;" />
 </td></tr></table>
