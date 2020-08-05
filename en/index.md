@@ -1,6 +1,6 @@
+<h1>Eduard de Boer &ndash; ReputationCoach &amp; Internet Marketeer</h1>
 <table border="0" cellwidth="0" cellpadding="0" width="100%">
 <tr><td valign="top">
-<h1>Eduard de Boer &ndash; ReputationCoach &amp; Internet Marketeer</h1>
 <ul>
 <li>9 years experience in local and organic SEO</li>
 <li>25+ years of experience in IT</li>
@@ -9,7 +9,7 @@
 <li>Google My Business Provider</li>
 </ul>
 </td><td valign="top">
-<img src="https://avatars1.githubusercontent.com/u/60309255?s=300&v=4" style="float: right;" />
+<img src="https://avatars1.githubusercontent.com/u/60309255?s=200&v=4" />
 </td></tr></table>
 
 ## Contact details
