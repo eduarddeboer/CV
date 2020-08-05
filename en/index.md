@@ -1,4 +1,6 @@
-<img src="https://avatars1.githubusercontent.com/u/60309255?s=200&v=4" style="float: right;" /># Eduard de Boer &ndash; ReputationCoach &amp; Internet Marketeer
+
+# Eduard de Boer &ndash; ReputationCoach &amp; Internet Marketeer
+<img src="https://avatars1.githubusercontent.com/u/60309255?s=200&v=4" style="float: right;" />
 - 9 years experience in local and organic SEO
 - Worldwide working experience and international client base
 - Google Street View Trusted Photographer
