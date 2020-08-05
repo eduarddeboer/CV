@@ -2,7 +2,7 @@
 <table border="0" cellwidth="0" cellpadding="0" width="100%">
 <tr><td valign="top">
 <ul>
-<li>9 years experience in local and organic SEO</li>
+<li>9 years experience in local and organic SEO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 <li>Worldwide working experience and international client base</li>
 <li>Google Street View Trusted Photographer</li>
 <li>Google My Business Provider</li>
