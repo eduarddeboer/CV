@@ -1,4 +1,5 @@
-<img src="https://avatars1.githubusercontent.com/u/60309255?s=200&v=4" style="align: right;" />
+<img src="https://avatars1.githubusercontent.com/u/60309255?s=200&v=4" style="float: right;" />
+
 # Eduard de Boer &ndash; ReputationCoach &amp; Internet Marketeer
 - 9 years experience in local and organic SEO
 - Worldwide working experience and international client base
