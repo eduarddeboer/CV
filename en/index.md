@@ -4,7 +4,8 @@
 # Eduard de Boer &ndash; ReputationCoach &amp; Internet Marketeer
 - 9 years experience in local and organic SEO
 - Worldwide working experience and international client base
-- 
+- Google Street View Trusted Photographer
+- Google My Business Provider
 
 ## Languages
 - Dutch (Mother tongue)
