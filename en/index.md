@@ -1,10 +1,13 @@
-
 # Eduard de Boer &ndash; ReputationCoach &amp; Internet Marketeer
-<img src="https://avatars1.githubusercontent.com/u/60309255?s=200&v=4" style="float: right;" />
+<table border="0" cellwidth="0" cellpadding="0">
+<tr><td>
 - 9 years experience in local and organic SEO
 - Worldwide working experience and international client base
 - Google Street View Trusted Photographer
 - Google My Business Provider
+</td><td style="align: right;">
+<img src="https://avatars1.githubusercontent.com/u/60309255?s=200&v=4" style="float: right;" />
+</td></tr></table>
 
 ## Contact details
 Email: [info@eduarddeboer.com](mailto:info@eduarddeboer.com)  
