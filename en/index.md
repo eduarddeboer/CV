@@ -15,7 +15,7 @@
         <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    
         <span>&nbsp;&nbsp;</span>
 </ul>
-</td><td style="align: right;">
+</td><td valign="top">
 <img src="https://avatars1.githubusercontent.com/u/60309255?s=200&v=4" style="float: right;" />
 </td></tr></table>
 
