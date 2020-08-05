@@ -43,7 +43,7 @@ Phone: [+31 6 - 4567 21 36](tel:+31645672136) | [+1 (646) 504-0722](tel:+1646504
 
 ## Experience
 
-**ReputationCoach - Apeldoorn (Netherlands)**
+**ReputationCoach - Apeldoorn (Netherlands)**  
 *2012 &ndash; present*
 - Helping business improve their online findability, visibility and online reputation
 - Produced a podcast on Stitcher iTunes from 2012 until 2016
@@ -52,40 +52,40 @@ Phone: [+31 6 - 4567 21 36](tel:+31645672136) | [+1 (646) 504-0722](tel:+1646504
 - More info: https:/www.reputatiecoaching.nl
 - Podcast at: https://www.stitcher.com/podcast/reputatie-coaching-podcast/reputatiecoaching
  
-**Google My Business Provider - Worldwide**
+**Google My Business Provider - Worldwide**  
 *2019 &ndash; present*
 - Verifying local businesses in Africa, Asia and Europe
 - Training Google Local Guides in The Gambia (in person)
 - Training Google Local Guides in Africa (online)
 
-**Google Street View Trusted Professional Photographer - Worldwide**
+**Google Street View Trusted Professional Photographer - Worldwide**  
 *2013 &ndash; present*
 - Shot virtual tours of 100's of local businesses in the Netherlands (see: https://www.meesterfotografen.nl)
 - Shot dozens of resorts, hotels and other businesses in The Gambia (see: https://www.360gambia.com)
 
-**Photographer - Allround Fotografie, Apeldoorn (Netherlands)**
+**Photographer - Allround Fotografie, Apeldoorn (Netherlands)**  
 *2006 &ndash; present*
 - Professional photographer: businesses, people, events etc.
 
-**LocalSpark Project Manager - Whitespark Inc, Edmonton (Canada)**
+**LocalSpark Project Manager - Whitespark Inc, Edmonton (Canada)**  
 *2015 &ndash; 2016*
 - Managed and carried out SEO projects for many clients
 - Published blog posts on Whitespark website
 
-**ICT Architect - Ordina, Nieuwegein (Netherlands)**
+**ICT Architect - Ordina, Nieuwegein (Netherlands)**  
 *2010 &ndash; 2014*
 - ICT architect at many projects for various clients
 
-**Multichannel Architect - Dutch Tax Authorities, Apeldoorn (Netherlands)**
+**Multichannel Architect - Dutch Tax Authorities, Apeldoorn (Netherlands)**  
 *2004 &ndash; 2009*
 - Worked on the design of the Multichannel Contact Center Architecture
 - Assistant project manager in various projects
 
-**CTO - RhinoBell, Amsterdam (Netherlands)**
+**CTO - RhinoBell, Amsterdam (Netherlands)**  
 *2003 &ndash; 2004*
 - Responsible for the technical management and expansion of this ITP
 
-**Lead Architect / Project Manager - Telekom Malaysia, Kuala Lumpur (Malaysia)**
+**Lead Architect / Project Manager - Telekom Malaysia, Kuala Lumpur (Malaysia)**  
 *2003*
 - Responsible for the futureproof architecture for Intelligent Network services
 - Responsible for the architecture of TM's contact center
@@ -95,6 +95,8 @@ Phone: [+31 6 - 4567 21 36](tel:+31645672136) | [+1 (646) 504-0722](tel:+1646504
 - Commnunity development programs
 - Wildlife conservation projects with Kenya Wildlife Service (KWS) and sponsors
 - Assisted with setting up anti-poaching programs
+
+> *(before 1999 upon request)
 
 ## Social media
 - https://www.linkedin.com/in/eduarddeboer
