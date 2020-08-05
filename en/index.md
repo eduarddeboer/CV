@@ -88,7 +88,7 @@ Phone: [+31 6 - 4567 21 36](tel:+31645672136) | [+1 (646) 504-0722](tel:+1646504
 - Wildlife conservation projects with Kenya Wildlife Service (KWS) and sponsors
 - Assisted with setting up anti-poaching programs
 
-> *(before 1999 upon request)
+> *(before 1999 upon request)*
 
 ## Social media
 - https://www.linkedin.com/in/eduarddeboer
