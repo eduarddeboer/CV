@@ -1,6 +1,6 @@
 <table border="0" cellwidth="0" cellpadding="0" width="100%">
 <tr><td valign="top">
-# Eduard de Boer &ndash; ReputationCoach &amp; Internet Marketeer
+<h1>Eduard de Boer &ndash; ReputationCoach &amp; Internet Marketeer</h1>
 <ul>
 <li>9 years experience in local and organic SEO</li>
 <li>Worldwide working experience and international client base</li>
