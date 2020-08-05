@@ -29,12 +29,13 @@ Phone: [+31 6 - 4567 21 36](tel:+31645672136) | [+1 (646) 504-0722](tel:+1646504
 ## Experience
 
 **ReputationCoach - Apeldoorn (Netherlands)**
-*2012 &ndash; present | https://www.reputatiecoaching.nl*  
+*2012 &ndash; present*
 - Helping business improve their online findability, visibility and online reputation
 - Produced a podcast on iTunes from 2012 until 2016
 - Conducted trainings about reputation for universities in The Netherlands
 - Guest Speaker about online reputation at various occasions
-
+- More info: https:/www.reputatiecoaching.nl
+ 
 **Google My Business Provider - Worldwide**
 *2019 &ndash; present*
 - Verifying local businesses in Africa, Asia and Europe
@@ -89,6 +90,3 @@ Phone: [+31 6 - 4567 21 36](tel:+31645672136) | [+1 (646) 504-0722](tel:+1646504
 - Whitespark: [The NEW Google mobile friendly test tool](https://whitespark.ca/blog/the-new-google-mobile-friendly-test-tool/) (May, 2016)
 - Whitespark: [How To Set Special Opening Hours in Google My Business](https://whitespark.ca/blog/how-to-set-special-opening-hours-in-google-my-business/) (December, 2018)
 - Brightlocal: [How GMB’s ‘Opening Soon’ Feature Works in Practice: A Case Study](https://www.brightlocal.com/blog/google-my-business-opening-soon-case-study/) (February, 2019)
-
-
-
