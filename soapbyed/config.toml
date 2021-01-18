@@ -1,0 +1,127 @@
+################################### Default Configuration ############################
+baseurl = "https://www.soapbyed.nl"
+title = "Scheerzeep voor mannen en vrouwen, maar dan natuurlijk!"
+theme = ["vex", "hugo-theme-faq"]
+# post excert
+summarylength = "20"
+# google analytics
+googleAnalytics = "UA-140251591-2"
+# Languages
+DefaultContentLanguage = 'nl'
+# disable language
+disableLanguages = ['fr', 'en'] # desable language from here
+
+[markup.goldmark.renderer]
+unsafe= true
+
+#################################### Plugins ##########################################
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/themefisher-font/themefisher-font.min.css"
+[[params.plugins.css]]
+link = "plugins/slick/slick.min.css"
+[[params.plugins.css]]
+link = "https://cdn.snipcart.com/themes/v3.0.20/default/snipcart.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jquery/jquery.js"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+link = "https://cdn.snipcart.com/themes/v3.0.20/default/snipcart.js"
+
+
+###################################### Navigation ######################################
+
+# homepage section menu
+[[menu.main]]
+name = "Home"
+URL = "/"
+weight = 1
+
+# main menu
+[[menu.main]]
+name = "Assortiment"
+URL = "products"
+weight = 2
+
+# main menu
+[[menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 3
+
+[[menu.main]]
+name = "Vragen"
+URL = "/faq/"
+weight = 4
+
+[[menu.main]]
+name = "Over Ed"
+URL = "/about/"
+weight = 5
+
+[[menu.main]]
+name = "Contact"
+URL = "contact"
+weight = 6
+
+# footer menu
+#[[menu.footer]]
+#name = "Blog"
+#URL = "blog"
+#weight = 1
+
+[[menu.footer]]
+name = "Contact"
+URL = "contact"
+weight = 2
+
+#[[menu.footer]]
+#name = "Voorwaarden"
+#URL = "terms-conditions"
+#weight = 3
+
+[[menu.footer]]
+name = "Privacy Policy"
+URL = "privacy-policy"
+weight = 4
+
+
+########################### Default parameters ##########################
+[params]
+shorttitle = "Soap by Ed"
+logo = "images/logo-soap-by-ed.svg"
+logo_width = "120px"
+# Meta data
+description = "Natuurlijke, ambachtelijk gemaakte zeep en scheerzeep."
+author = "Ed de ZeepMaker"
+# currency
+currency = "€"
+# contact form action
+contact_form_action = "https://formspree.io/xknqalog" # contact form works with https://formspree.io
+# snipcart public api key
+snipcart_api = "MzI1NmUwZDEtMWJjZi00ZGMyLWFlOTAtMzRmNzQyMjkwYTdjNjM3MzM4ODI2Njg3NjY1MTY0"
+
+# Preloader
+[params.preloader]
+enable = true
+preloader = "" # use .png , .svg or .gif format
+
+# Subscription
+[params.subscription]
+
+################################### English language #####################################
+[Languages.nl]
+languageName = "NL"
+languageCode = "nl"
+contentDir = "content/dutch"
+weight = 1
+# copyright
+copyright = "&copy; 2020 [Soap by Ed](https://www.soapbyed.nl/)"
