@@ -1,4 +1,4 @@
-# Eduard de Boer &ndash; ReputationCoach &amp; Internet Marketeer</h1>
+# Eduard de Boer &ndash; EUTR / EUDR Specialist & FSC®/PEFC Auditor </h1>
 <table border="0" cellwidth="0" cellpadding="0" width="100%">
 <tr><td valign="top">
 <ul>
