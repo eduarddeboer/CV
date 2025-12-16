@@ -21,23 +21,23 @@ Phone: [+31 6 - 82568543](tel:+31682568543)
 - German (Fluent)
 
 ## Education
+- ISO 19011 (2020)
 - Technical Highschool (1993)
 - Archimate (2013)
 
-## Skills / Tools
+## Compter-related Skills / Tools
 - Operating systems &ndash; MacOS X, MS Windows, Linux, FreeBSD, OpenBSD etc. 
 - Programming Languages &ndash; PHP, Perl, Google Apps Scripting, JavaScript, HTML, CSS, Postscript, Markdown
 - Frameworks &ndash; Node.js, Amazon Web Services
 - Office tools &ndash; Microsoft Office, Google Documents, Open Office, Zoho Office
 - CRM: SuiteCRM, SugarCRM, ZohoCRM
 - Graphic Editors &ndash; Adobe Photoshop, Adobe Lightroom
-- Other &ndash; Github, HUGO
+- Other &ndash; Github, HUGO, Cloudflare
 
 ## Experience
 
-**EUTR / EUDR Specialist & FSC / PEFC Auditor - Ingenieursburea Evan Buytendijk**
+**EUTR / EUDR Specialist & FSC / PEFC Auditor - Ingenieursbureau Evan Buytendijk**
 *2020 &ndsh; present*
-
 
 **ReputationCoach - Apeldoorn (Netherlands)**  
 *2012 &ndash; 2020*
@@ -46,8 +46,6 @@ Phone: [+31 6 - 82568543](tel:+31682568543)
 - Produced a podcast on Stitcher iTunes from 2012 until 2016
 - Conducted trainings about reputation for universities in The Netherlands
 - Guest Speaker about online reputation at various occasions
-- More info: https://www.reputatiecoaching.nl
-- Podcast at: https://www.stitcher.com/podcast/reputatie-coaching-podcast/reputatiecoaching
  
 **Google Street View Trusted Professional Photographer - Worldwide**  
 *2013 &ndash; 2020*
